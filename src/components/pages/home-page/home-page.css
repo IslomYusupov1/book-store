@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    z-index:10;
+    position: relative;
+    text-after-overflow: hidden;
+
+}
+
+
+.span {
+    width: 70%;
+    height:2px;
+    background-color: white;
+    margin: 6px 5px;
+    transition: 0.5s;
+}
+
+.menu-btn:hover  .line_1 {
+    transform: translate(34px,25px);
+    background-color: black;
+}
+
+.menu-btn:hover  .line_2 {
+    transform: translate(61px, 17px);
+    background-color: black;
+}
+
+.menu-btn:hover  .line_3 {
+    transform: translate(88px, 9px);
+    background-color: black;
+}
+
+i.fa {
+    width: 70%;
+    height: 70%;
+    background-color: transparent;
+    padding-top: -10px;
+    position: absolute;
+    transition: 0.5s;
+    visibility: hidden;
+    color: black;
+    opacity: 0;
+    font-size: 20px;
+
+}
+
+.fa-facebook {
+    transform: translate(20px, -50px);
+}
+
+.fa-instagram {
+    transform: translate(48px, -50px);
+}
+.fa-telegram {
+    transform: translate(75px,-50px);
+}
+
+.menu-btn:hover .fa-facebook  {
+    transform: translate(20px,-25px);
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+}
+
+.menu-btn:hover .fa-instagram {
+    transform: translate(48px,-25px);
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+}
+
+.menu-btn:hover .fa-telegram  {
+    transform: translate(75px,-25px);
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+}

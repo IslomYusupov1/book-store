@@ -1,0 +1,73 @@
+import React from 'react'
+import {push} from 'react-router-redux';
+import {message, Modal} from 'antd';
+
+export const auth = (payload) => (dispatch, getState) => {
+    const {
+        form: {login}
+    } = getState();
+
+    let email, password;
+
+    /*   if (payload.login === undefined) {
+        notification.open({
+          message: 'Ошибка',
+          description: 'Введите логин'
+        });
+      }
+
+      if (payload.password === undefined) {
+        notification.open({
+          message: 'Ошибка',
+          description: 'Введите пароль'
+        });
+      } */
+
+    if (payload) {
+        email = payload.login;
+        password = payload.password;
+    } else {
+        email = login.values.login;
+        password = login.values.password;
+    }
+
+    dispatch({
+        api: loginUser,
+        types: [
+            types.REQUEST_API_START,
+            types.AUTH_GET_USER_TOKEN_SUCCESS,
+            types.REQUEST_API_ERROR
+        ],
+        query: {
+            email,
+            password
+        }
+    })
+        .then((response) => {
+            if (response.payload.data && response.payload.success) {
+                localStorage.setItem('token', response.payload.data.token);
+                //       message.success(
+                //          'Добро пожаловать ' + response.payload.data.user.first_name,
+                //          4
+                //        );
+
+                if (response.payload.data.company && response.payload.data.company.providerBound) {
+                    dispatch(push('/'));
+                } else {
+                    dispatch(push('/provider-settings-edit'));
+                }
+
+            }
+        })
+        .catch(error => {
+            if (error.response && error.response.status === 401) {
+                message.error(t('badCredentials'), 4);
+            } else if (error.response && error.response.data && error.response.data.errors) {
+                error.response.data.errors.map(error =>
+                    message.error(error.user_msg, 4)
+                );
+            } else {
+                message.error(error.message, 4);
+            }
+        });
+};

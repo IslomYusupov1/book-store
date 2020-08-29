@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*body{*/
+/*    background: url(./image.jpg)  100% ;*/
+/*    padding-top: 100px;*/
+/*    background-size: 100%;*/
+/*}*/
+.text-logo{
+    margin-left: 47%;
+    margin-top: 30px;
+
+}
+.container{
+    position: relative;
+    width: 24%;
+    height: 100%;
+    margin: 60px 500px 0 auto;
+    text-align: center;
+    /*padding-top: 8px;*/
+    padding: 0;
+    /*border-bottom: 1px solid rgb(231, 228, 228);*/
+    border-left: 1px solid rgb(231, 228, 228);
+    border-top: 1px solid rgb(231, 228, 228);
+    border-right: 1px solid rgb(231, 228, 228);
+    border-bottom: 1px solid rgb(231, 228, 228);
+    border-radius: 7px 7px 0 0;
+    background-color: white;
+    z-index: 3;
+}
+
+.container p{
+    font-size: 25px;
+    height: 30px;
+    font-family:  'Montserrat', cursive;
+    margin-right: 57%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.pp {
+    margin-right: 50%!important;
+}
+
+.container1 input
+{
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    padding-left: 1px;
+    padding-right: 1px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(231, 228, 228);
+    border-radius: 0;
+    color: #485455;
+    background: transparent;
+    resize: none;
+}
+
+.container1 input:last-child{
+    height: 0;
+}
+
+.container1 span {
+    position: absolute;
+    left: 10%;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: black;
+    transition: all 0.2s;
+    font-family: 'Montserrat', cursive;
+}
+
+.container1 input:focus ~ span,
+.container1 input:valid ~ span {
+    transform: translateY(-20px)!important;
+    color: #0e72e2;
+    font-size: 13px;
+}
+
+.container1 input:focus,
+.container1 input:valid
+{
+    border-bottom:2px solid #0e72e2!important;
+}
+
+    /*input {*/
+/*    width: 270px;*/
+/*    height: 33px;*/
+/*    margin-left: 35px;*/
+/*    border: none;*/
+/*    border-bottom:1px solid #E8E8E8;*/
+/*    outline: none;*/
+/*    color: #485455;*/
+/*}*/
+.forg {
+    color: #0e72e2;
+    font-size: 9px;
+    text-decoration: none;
+    font-weight: 1000;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', cursive;
+
+}
+
+.forg:hover {
+    color: #1071E3;
+    border: none;
+}
+
+
+/*.container input:focus*/
+/*{*/
+
+/*    border-bottom:2px solid #0e72e2;*/
+/*}*/
+
+.log{
+    font-family: 'Montserrat', cursive;
+}
+/*.container1 input:hover {*/
+/*    box-shadow: 0 0 6px 3px  rgba(58, 219, 253, 0.35)*/
+/*    */
+/*}*/
+.container1 button{
+    width: 80%;
+    height: 39px;
+    font-size: 15px;
+    color: white;
+    font-family: fantasy;
+    padding: 4px 60px;
+    font-weight: lighter;
+    background-color: #1071E3;
+    border-color: #0070f1;
+    /*background: linear-gradient(20deg, dodgerblue, #00008b);*/
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    -webkit-transition: background-color .2s ease-out 0s;
+    -o-transition: background-color .2s ease-out 0s;
+    -moz-transition: background-color .2s ease-out 0s;
+    transition: background-color .2s ease-out 0s
+}
+
+.container1 button:active,
+.container1 button:hover{
+    background-color: #0096d1;
+    border-color: #0096d1;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.container1 a{
+    color: dodgerblue;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.container1 a:hover{
+    color: red;
+    border: none;
+}
+
+
+.social {
+    padding-right: 8px;
+}
+
+.social i{			/*иконки соц сетей*/
+    color: rgb(153, 153, 153);
+    width: 100px;
+    font-size: 12px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    background-color: rgba(236, 236, 236, 0.5);
+    margin-top: 17px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+
+#f:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #0072c6;
+}
+#g:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #d24726;
+}
+#l:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #2b579a;
+}
+#w:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #217346;
+}
+
+.footer{
+    width: 100%;
+    height: 95px;
+    background-color: #FCFCFC;
+    /*padding: 20px 0 15px;*/
+    border-top: 1px solid #e8e8e8;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.text1{
+    margin-top: 25px;
+    font-family: fantasy;
+    margin-bottom: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    /*margin-right: 10px;*/
+}
+
+.sign-up{
+    font-family: fantasy;
+    margin-top:  1em;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0e72e2;
+    /*margin-right: 8px;*/
+}
+
+.sign-up:hover,
+.sign-up:active {
+    text-decoration: none;
+}

@@ -1,0 +1,9 @@
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spinner {
+    margin-left: 500px;
+    font-size: 30px;
+}
