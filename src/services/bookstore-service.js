@@ -2,6 +2,7 @@ export default class BookstoreService {
 
     data = [
         {
+
             id: 1,
             title: 'Learning React',
             author: 'Banks Alex, Eve Porcello',
