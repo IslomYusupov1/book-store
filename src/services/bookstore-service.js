@@ -5,21 +5,21 @@ export default class BookstoreService {
             id: 1,
             title: 'Learning React',
             author: 'Banks Alex, Eve Porcello',
-            price: 30,
+            price: 60,
             coverImage: "https://m.media-amazon.com/images/I/51Q43WRXJzL.jpg"
         },
         {
             id: 2,
             title: 'Fullstack React',
             author: 'Ari Lerner, Nate Murray ',
-            price: 50,
+            price: 90,
             coverImage: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqYX5QEZwHefA6KImnRE89ClJhgPxNqoFRKpBOgL4JCLLRAd36"
         },
         {
             id: 3,
             title: 'HTML & CSS',
             author: 'Jhon Jacket',
-            price: 25,
+            price: 30,
             coverImage: "https://litportal.ru/covers/38272898.jpg"
         },
         {
